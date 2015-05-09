@@ -1,0 +1,44 @@
+/* THIS FILE WILL BE OVERWRITTEN BY DEV-C++ */
+/* DO NOT EDIT! */
+
+#include <windows.h> // include for version info constants
+
+
+A ICON MOVEABLE PURE LOADONCALL DISCARDABLE "PixelSumGUI.ico"
+
+//
+// SUPPORT FOR WINDOWS XP THEMES:
+// THIS WILL MAKE THE PROGRAM USE THE COMMON CONTROLS
+// LIBRARY VERSION 6.0 (IF IT IS AVAILABLE)
+//
+1 24 "PixelSumGUI.exe.Manifest"
+
+//
+// TO CHANGE VERSION INFORMATION, EDIT PROJECT OPTIONS...
+//
+1 VERSIONINFO
+FILEVERSION 1,3,0,268
+PRODUCTVERSION 1,3,0,268
+FILETYPE VFT_APP
+{
+  BLOCK "StringFileInfo"
+	 {
+		 BLOCK "040E04E4"
+		 {
+			 VALUE "CompanyName", ""
+			 VALUE "FileVersion", "1.3"
+			 VALUE "FileDescription", "Developed using the Dev-C++ IDE"
+			 VALUE "InternalName", ""
+			 VALUE "LegalCopyright", ""
+			 VALUE "LegalTrademarks", ""
+			 VALUE "OriginalFilename", ""
+			 VALUE "ProductName", "PixelSumGUI"
+			 VALUE "ProductVersion", "1.3"
+		 }
+	 }
+  BLOCK "VarFileInfo"
+	 {
+		 VALUE "Translation", 0x040E, 1252
+	 }
+}
+

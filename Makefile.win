@@ -1,0 +1,33 @@
+# Project: PixelSumG
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = PixelSumGUI_private.res
+OBJ  = main.o $(RES)
+LINKOBJ  = main.o $(RES)
+LIBS =  -L"D:/Dev-Cpp/lib" -g3 -ljpeg -mwindows -limm32 -lshell32 -lole32 -luuid -lintl -lcairo.dll -lpangowin32-1.0.dll -latk-1.0.dll -lgdk_pixbuf-2.0.dll -lgdk-win32-2.0.dll -lglib-2.0.dll -lgmodule-2.0.dll -lgobject-2.0.dll -lgthread-2.0.dll -lgtk-win32-2.0.dll -lpango-1.0.dll  
+INCS =  -I"D:/Dev-Cpp/include" 
+CXXINCS =  -I"D:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"D:/Dev-Cpp/include/c++/3.4.2/backward"  -I"D:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"D:/Dev-Cpp/include/c++/3.4.2"  -I"D:/Dev-Cpp/include" 
+BIN  = PixelSumGUI.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS) -I"D:\Dev-Cpp\\include\gtk-2.0" -I"D:\Dev-Cpp\\lib\gtk-2.0\include" -I"D:\Dev-Cpp\\include\atk-1.0" -I"D:\Dev-Cpp\\include\pango-1.0" -I"D:\Dev-Cpp\\include\cairo" -I"D:\Dev-Cpp\\include\glib-2.0" -I"D:\Dev-Cpp\\include\glib-2.0\glib" -I"D:\Dev-Cpp\\lib\glib-2.0" -I"D:\Dev-Cpp\\lib\glib-2.0\include" -mno-cygwin -mms-bitfields  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before PixelSumGUI.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "PixelSumGUI.exe" $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+PixelSumGUI_private.res: PixelSumGUI_private.rc 
+	$(WINDRES) -i PixelSumGUI_private.rc --input-format=rc -o PixelSumGUI_private.res -O coff 
