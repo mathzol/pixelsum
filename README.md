@@ -1,1 +1,9 @@
-# pixelsum
+# PixelSum - terület számító program
+
+Az alapötletet számomra a karakterláncok egyes elemeinek a megszámlálása adta, hisz akár a karakterláncok elemeit, a kép pixeleit is megszámolhatjuk. Ezen az úton elindulva született meg a PixelSum nevű kis program.
+
+A program a szkennelt képet egy megadott színérzékenység alapján lebontja két egyszerűen kezelhető adatra, majd ezekből az adatokból számolja ki a beszkennelt tárgy területét...
+
+A program a szkennelt képet egy megadott színérzékenység alapján lebontja két egyszerűen kezelhető adatra, majd ezekből az adatokból számolja ki a beszkennelt tárgy területét. A program által átalakított kép, melyen szintén a szkennelt tárgy alakzata látható, természetesen az ember által ellenőrizhető és szükség esetén módosítható, így nem zártam ki az emberi beavatkozás lehetőségét sem. A program eleinte csupán egy nyers pixeladatokból álló képformátumot tudott feldolgozni, így sajnos szükség volt külső programra a kívánt kép szerkesztéséhez és eme képet szintén csak megfelelő feltételek mellett tudta feldolgozni a program. Később sikerült egy ma már elfogadott és a többség által használt képformátum értelmezését lehetővé tenni a program számára, így megkönnyítve annak használhatóságát. Ekkor a program csak "parancssoros" verzióban létezett, ám ezt követően elkészült a grafikus felülettel rendelkező verzió is, mely még inkább segít a program használatát megkönnyíteni. A tesztek során papírra rajzolt különböző geometria alakzatok, pontos adatainak tudatában, mértük fel a program pontosságát, s vettettük össze a mért és az általunk kiszámolt végső eredményeket. A program jól vizsgázott.
+
+Jelenleg készülőben van, a mérési adatok letárolásához és azok kielemzéséhez szolgáló, adatbázis és annak kezelő modulja. A továbbiakban törekedni szeretnék a program teljes függetlenítésére más programokkal szemben, de nem kizárva más alkalmazásokba való beépíthetőségét, vagy a program által előállított adatok más alkalmazásokkal való értelmezését és lehetővé tenni a program futását Linux rendszer alatt.
